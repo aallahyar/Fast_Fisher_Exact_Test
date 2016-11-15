@@ -15,20 +15,16 @@ P-value of such a table can be calculated by:
 <img align="center" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/89491b3e58ce5ba651d3d22217cbbcbf05fbd7f1" alt="FisherExactTest">
 
 ### Speed
-My tests showed that this implementation is about 40 times faster than current implementation in Matlab (ver 2016b).
+My tests showed that this implementation is at least 20 times faster than current implementation in Matlab (ver 2016b).
 
 ### Citation
 This code is heavily inspired by an implementation by Jia Meng: 
 [MatWorks FileExchange](https://nl.mathworks.com/matlabcentral/fileexchange/34846-fast-algorithm-for-the-log-p-value-of-fisher-s-exact-test-or-hypergeometric-distribution)
 
 ### Usage example
-This example calculates "left tail" log_2(p-value) (i.e. mutual exclusivity) as well as "right tail" log_2(p-value) (i.e. cooperation):
+This example calculates "left tail" (i.e. mutual exclusivity) p-value as well as "right tail" (i.e. cooperation) p-value:
 
-`[log_pval_left_tail, log_pval_right_tail] = FastFisherExactTest(a, b, c, d)`
-
-In order to get the exact p-values simply use:
-
-`pval_left_tail = exp(logp_left_tail)`
+`[pval_left_tail, pval_right_tail] = FastFisherExactTest(a, b, c, d)`
 
 ### Known Bugs
-In my tests, I could identify (Matlab_pval)/1e-10 difference between my implementation and Matlab. I think it is due to round-off errors. You can use 
+In my tests, I could identify 1e-10 difference between my implementation and Matlab. I think it is due to round-off errors. An script is provided in "testcode.m" to compare results with Matlab.
