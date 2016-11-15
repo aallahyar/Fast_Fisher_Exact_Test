@@ -9,7 +9,11 @@ Note that this code is heavily inspired by an implementation by Jia Meng:
 Usage example:
 
 |              | Men | Women | Row Total
-| :-------:    |:---:| :----:| ---
+| :-------:    |:---:| :----:| :---:
 | Have hat     |  a  |   b   | a+b
 | No hat       |  c  |   d   | c+d
 | Column Total | a + c | b + d | N
+
+<center>
+<math>p = \frac{ \displaystyle{{a+b}\choose{a}} \displaystyle{{c+d}\choose{c}} }{ \displaystyle{{n}\choose{a+c}} } = \frac{(a+b)!~(c+d)!~(a+c)!~(b+d)!}{a!~~b!~~c!~~d!~~n!}</math>
+</center>
