@@ -18,7 +18,7 @@ P-value of such a table can be calculated by:
 My tests showed that this implementation is about 40 times faster than current implementation in Matlab (ver 2016b).
 
 ### Citation
-Note that this code is heavily inspired by an implementation by Jia Meng: 
+This code is heavily inspired by an implementation by Jia Meng: 
 [MatWorks FileExchange](https://nl.mathworks.com/matlabcentral/fileexchange/34846-fast-algorithm-for-the-log-p-value-of-fisher-s-exact-test-or-hypergeometric-distribution)
 
 ### Usage example
