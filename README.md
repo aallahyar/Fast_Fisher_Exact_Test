@@ -2,7 +2,7 @@
 Fast implementation of Fisher exact test (hypergeometric test) in Matlab. 
 
 # Description:
-One can use fisher exact test to calculate the association between two groups. The following is an contingency table for association between being a man (or woman) and wearing hat.
+One can use fisher exact test to calculate degree of association between two groups. The following is a contingency table for association between being a man (or woman) and wearing hat.
 
 |              | Men | Women | Row Total
 | :-------:    |:---:| :----:| :---:
