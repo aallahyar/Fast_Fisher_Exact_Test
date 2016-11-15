@@ -15,4 +15,4 @@ Usage example:
 | Column Total | a + c | b + d | N
 
 P-value of such a table can be calculated by:
-(https://wikimedia.org/api/rest_v1/media/math/render/svg/89491b3e58ce5ba651d3d22217cbbcbf05fbd7f1)
+[FisherEquation](https://wikimedia.org/api/rest_v1/media/math/render/svg/89491b3e58ce5ba651d3d22217cbbcbf05fbd7f1)
