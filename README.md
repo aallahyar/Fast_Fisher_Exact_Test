@@ -1,5 +1,5 @@
 # Fast Fisher Exact Test
-Fast implementation of Fisher exact test (hypergeometric test) in Matlab. 
+Fast implementation of Fisher exact test (hypergeometric test) in Matlab. This function requires no toolbox to be installed (tested on Matlab v2016b).
 
 ### Description:
 One can use fisher exact test to calculate degree of association between two groups. The following is a contingency table for association between being a man (or woman) and wearing hat.
