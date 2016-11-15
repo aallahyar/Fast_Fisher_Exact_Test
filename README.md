@@ -24,7 +24,11 @@ This code is heavily inspired by an implementation by Jia Meng:
 ### Usage example
 This example calculates "left tail" log_2(p-value) (i.e. mutual exclusivity) as well as "right tail" log_2(p-value) (i.e. cooperation):
 
-`[logp_left_tail, logp_right_tail] = FastFisherExactTest(a, b, c, d)`
+`[log_pval_left_tail, log_pval_right_tail] = FastFisherExactTest(a, b, c, d)`
+
+In order to get the exact p-values simply use:
+
+`pval_left_tail = exp(logp_left_tail)`
 
 ### Known Bugs
 In my test, I could identify (Real Pval)/1e-10 difference between my implementation and Matlab. I think it is due to round-off errors. You can use 
