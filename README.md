@@ -27,4 +27,4 @@ This example calculates "left tail" (i.e. mutual exclusivity) p-value as well as
 `[pval_left_tail, pval_right_tail] = FastFisherExactTest(a, b, c, d)`
 
 ### Known Bugs
-In my tests, I could identify 1e-10 difference between my implementation and Matlab. I think it is due to round-off errors. An script is provided in "testcode.m" to compare results with Matlab.
+In my tests, I could identify 1e-10 difference between my implementation and Matlab. I think it is due to round-off errors. A script is provided in "testcode.m" to compare results with Matlab.
