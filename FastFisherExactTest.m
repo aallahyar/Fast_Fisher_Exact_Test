@@ -1,4 +1,4 @@
-function [logp_left, logp_right] = FastFisherExactTest(a, b, c, d)
+function [pval_left, pval_right] = FastFisherExactTest(a, b, c, d)
 % Calculate the natural log p-value of hypergeometric distribution (Fisher exact test)
 % Amin Allahyar A.Allahyar@TUDelft.nl
 %
@@ -17,24 +17,24 @@ PosC2 = a+c;
 Total = a+b+c+d;
 
 if a>=PosC1
-	logp_left = 0;
+	pval_left = 1;
 else
 	x_left = 0:a;
 	lst = -log_f(x_left)-log_f(PosC2-x_left)-log_f(PosC1-x_left)-log_f(Total+x_left-PosC2-PosC1);
 	lst_max = max(lst);
-	logp_left = log_f(PosC2)+log_f(Total-PosC2)+log_f(PosC1)+log_f(Total-PosC1)-log_f(Total)+lst_max+log(sum(exp(lst-lst_max)));
+	pval_left = exp(log_f(PosC2)+log_f(Total-PosC2)+log_f(PosC1)+log_f(Total-PosC1)-log_f(Total)+lst_max+log(sum(exp(lst-lst_max))));
 end
 
 if nargout>1
 	if a*Total*PosC1*PosC2 == 0
-		logp_right = 0;
+		pval_right = 1;
 	else
 		minCT = min(PosC1,PosC2);
 		n_lst = minCT-a+1;
 		x_right = a:n_lst+a-1;
 		lst = -log_f(x_right)-log_f(PosC2-x_right)-log_f(PosC1-x_right)-log_f(Total+x_right-PosC2-PosC1);
 		lst_max = max(lst);
-		logp_right = log_f(PosC2)+log_f(Total-PosC2)+log_f(PosC1)+log_f(Total-PosC1)-log_f(Total)+lst_max+log(sum(exp(lst-lst_max)));
+		pval_right = exp(log_f(PosC2)+log_f(Total-PosC2)+log_f(PosC1)+log_f(Total-PosC1)-log_f(Total)+lst_max+log(sum(exp(lst-lst_max))));
 	end
 end
 end
