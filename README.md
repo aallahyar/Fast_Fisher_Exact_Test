@@ -22,5 +22,9 @@ Note that this code is heavily inspired by an implementation by Jia Meng:
 [MatWorks FileExchange](https://nl.mathworks.com/matlabcentral/fileexchange/34846-fast-algorithm-for-the-log-p-value-of-fisher-s-exact-test-or-hypergeometric-distribution)
 
 ### Usage example:
+This example calculates "left tail" log_2(p-value) (i.e. mutual exclusivity) as well as "right tail" log_2(p-value) (i.e. cooperation):
+
 `[logp_left_tail, logp_right_tail] = FastFisherExactTest(a, b, c, d)`
-This example calculates "left tail" log_2(p-value) (i.e. mutual exclusivity) as well as "right tail" log_2(p-value) (i.e. cooperation)
+
+### Known Bugs
+In my test, I could identify (Real Pval)/1e-10 difference between my implementation and Matlab. I think it is due to round-off errors.
