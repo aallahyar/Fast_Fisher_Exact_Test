@@ -16,3 +16,5 @@ Usage example:
 
 P-value of such a table can be calculated by:
 ![alt text](https://wikimedia.org/api/rest_v1/media/math/render/svg/89491b3e58ce5ba651d3d22217cbbcbf05fbd7f1 "FisherExactTest")
+
+<img align="center" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/89491b3e58ce5ba651d3d22217cbbcbf05fbd7f1" alt="FisherExactTest">
