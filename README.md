@@ -10,8 +10,8 @@ Usage example:
 
 |              | Men | Women | Row Total
 | :-------:    |:---:| :----:| :---:
-| Have hat     |  a  |   b   | a+b
-| No hat       |  c  |   d   | c+d
+| **Have hat**     |  a  |   b   | a+b
+| **No hat**       |  c  |   d   | c+d
 | Column Total | a + c | b + d | N
 
 P-value of such a table can be calculated by:
