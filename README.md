@@ -14,6 +14,5 @@ Usage example:
 | No hat       |  c  |   d   | c+d
 | Column Total | a + c | b + d | N
 
-<center>
-<math>p = \frac{ \displaystyle{{a+b}\choose{a}} \displaystyle{{c+d}\choose{c}} }{ \displaystyle{{n}\choose{a+c}} } = \frac{(a+b)!~(c+d)!~(a+c)!~(b+d)!}{a!~~b!~~c!~~d!~~n!}</math>
-</center>
+P-value of such a table can be calculated by:
+(https://wikimedia.org/api/rest_v1/media/math/render/svg/89491b3e58ce5ba651d3d22217cbbcbf05fbd7f1)
